@@ -9,6 +9,10 @@ This website hosts documentation for Python packages developed in the project. T
 * [twinyields](https://github.com/TwinYields/twinyields-python). Package to run the digital twin. Initializes the model and database. Retrieves sensor data and EO data and runs the model. The package is under active development and the API is not yet documented.
 
 
+The software with first modelling results are described in our preprint:
+
+> Bloch, V., Palosuo, T., Huitu, H., Ronkainen, A., Backman, J., Pussi, K., Suokannas, A., Pastell, M., 2022. Towards a digital twin for optimal field management. agriRxiv. https://doi.org/10.31220/agriRxiv.2022.00165
+
 ### Table of contents
 
 
