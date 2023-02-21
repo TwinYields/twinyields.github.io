@@ -4,6 +4,5 @@
 format: jb-book
 root: intro
 chapters:
-- file: RVIII_2022/Zoning_from_data
-- file: api/apsim
 - file: api/farmingpy
+- file: api/apsim

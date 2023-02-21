@@ -1,19 +1,19 @@
 
-apsim API
+farmingpy.apsim API
 ---------
 
-.. currentmodule:: apsim
+.. currentmodule:: farmingpy.apsim
 
 .. autosummary::
-    :toctree: apsim
+    :toctree: farmingpy.apsim
     :nosignatures:
-    
+
     APSIMX
     PhenologyOptimizer
     SoilOptimizer
 
 .. autoclass:: APSIMX
-    :members: 
+    :members:
     :undoc-members:
 
 .. autoclass:: PhenologyOptimizer

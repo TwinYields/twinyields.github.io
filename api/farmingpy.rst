@@ -15,3 +15,4 @@ ISOBUS task data
 .. autoclass:: TimeLogData
     :members:
     :undoc-members:
+
