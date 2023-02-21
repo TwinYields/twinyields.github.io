@@ -5,7 +5,7 @@ title: TwinYields
 author: Luke, Finland
 logo: figures/twinlogo.png
 
-exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
+exclude_patterns: [Readme.md, _build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
