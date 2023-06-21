@@ -345,13 +345,13 @@ title="Print to PDF"
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="farmingpy.apsim/farmingpy.apsim.APSIMX.html#farmingpy.apsim.APSIMX" title="farmingpy.apsim.APSIMX"><code class="xref py py-obj docutils literal notranslate"><span class="pre">APSIMX</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#farmingpy.apsim.APSIMX" title="farmingpy.apsim.APSIMX"><code class="xref py py-obj docutils literal notranslate"><span class="pre">APSIMX</span></code></a></p></td>
 <td><p>Modify and run Apsim next generation simulation models.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="farmingpy.apsim/farmingpy.apsim.PhenologyOptimizer.html#farmingpy.apsim.PhenologyOptimizer" title="farmingpy.apsim.PhenologyOptimizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PhenologyOptimizer</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#farmingpy.apsim.PhenologyOptimizer" title="farmingpy.apsim.PhenologyOptimizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PhenologyOptimizer</span></code></a></p></td>
 <td><p>Optimize cultivar parameters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="farmingpy.apsim/farmingpy.apsim.SoilOptimizer.html#farmingpy.apsim.SoilOptimizer" title="farmingpy.apsim.SoilOptimizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SoilOptimizer</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#farmingpy.apsim.SoilOptimizer" title="farmingpy.apsim.SoilOptimizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SoilOptimizer</span></code></a></p></td>
 <td><p>Optimize soil paramters.</p></td>
 </tr>
 </tbody>
@@ -360,6 +360,123 @@ title="Print to PDF"
 <dt class="sig sig-object py" id="farmingpy.apsim.APSIMX">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">APSIMX</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">apsimx_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX" title="Permalink to this definition">#</a></dt>
 <dd><p>Modify and run Apsim next generation simulation models.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.clone_simulation">
+<span class="sig-name descname"><span class="pre">clone_simulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.clone_simulation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.clone_simulation" title="Permalink to this definition">#</a></dt>
+<dd><p>Clone a simulation and add it to Model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target</strong> – target simulation name</p></li>
+<li><p><strong>simulation</strong> – Simulation name to be cloned, of None clone the first simulation in model</p></li>
+<li><p><strong>optional</strong> – Simulation name to be cloned, of None clone the first simulation in model</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.clone_zone">
+<span class="sig-name descname"><span class="pre">clone_zone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.clone_zone"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.clone_zone" title="Permalink to this definition">#</a></dt>
+<dd><p>Clone a zone and add it to Model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target</strong> – target simulation name</p></li>
+<li><p><strong>zone</strong> – Name of the zone to clone</p></li>
+<li><p><strong>simulation</strong> – Simulation name to be cloned, of None clone the first simulation in model</p></li>
+<li><p><strong>optional</strong> – Simulation name to be cloned, of None clone the first simulation in model</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.find_physical_soil">
+<span class="sig-name descname"><span class="pre">find_physical_soil</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.find_physical_soil"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.find_physical_soil" title="Permalink to this definition">#</a></dt>
+<dd><p>Find physical soil</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>simulation</strong> – Simulation name, if <cite>None</cite> use the first simulation.</p></li>
+<li><p><strong>optional</strong> – Simulation name, if <cite>None</cite> use the first simulation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>APSIM Models.Soils.Physical object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.find_simulations">
+<span class="sig-name descname"><span class="pre">find_simulations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simulations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.find_simulations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.find_simulations" title="Permalink to this definition">#</a></dt>
+<dd><p>Find simulations by name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>simulations</strong> – List of simulation names to find, if <cite>None</cite> return all simulations</p></li>
+<li><p><strong>optional</strong> – List of simulation names to find, if <cite>None</cite> return all simulations</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list of APSIM Models.Core.Simulation objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.find_zones">
+<span class="sig-name descname"><span class="pre">find_zones</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simulation</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.find_zones"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.find_zones" title="Permalink to this definition">#</a></dt>
+<dd><p>Find zones from a simulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>simulation</strong> – simulation name</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list of zones as APSIM Models.Core.Zone objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.get_agpasture_crops">
+<span class="sig-name descname"><span class="pre">get_agpasture_crops</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simulations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.get_agpasture_crops"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.get_agpasture_crops" title="Permalink to this definition">#</a></dt>
+<dd><p>Get AgPasture crops from simulations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start_date</strong> – Start date as string, by default <cite>None</cite></p></li>
+<li><p><strong>optional</strong> – Start date as string, by default <cite>None</cite></p></li>
+<li><p><strong>end_date</strong> – End date as string, by default <cite>None</cite></p></li>
+<li><p><strong>optional</strong> – End date as string, by default <cite>None</cite></p></li>
+<li><p><strong>simulations</strong> – List of simulation names to update, if <cite>None</cite> get from all simulations</p></li>
+<li><p><strong>optional</strong> – List of simulation names to update, if <cite>None</cite> get from all simulations</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List of PastureSpecies (C# class exposed trough pythonnet)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.get_bd">
+<span class="sig-name descname"><span class="pre">get_bd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.get_bd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.get_bd" title="Permalink to this definition">#</a></dt>
+<dd><p>Get soil bulk density</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>simulation</strong> – Simulation name.</p></li>
+<li><p><strong>optional</strong> – Simulation name.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Array of BD values</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.get_crop_ll">
 <span class="sig-name descname"><span class="pre">get_crop_ll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.get_crop_ll"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.get_crop_ll" title="Permalink to this definition">#</a></dt>
@@ -373,6 +490,23 @@ title="Print to PDF"
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p>Array of values</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.get_dates">
+<span class="sig-name descname"><span class="pre">get_dates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simulations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.get_dates"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.get_dates" title="Permalink to this definition">#</a></dt>
+<dd><p>Get simulation dates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>simulations</strong> – List of simulation names to get, if <cite>None</cite> get all simulations</p></li>
+<li><p><strong>optional</strong> – List of simulation names to get, if <cite>None</cite> get all simulations</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dictionary of simulation names with dates</p>
 </dd>
 </dl>
 </dd></dl>
@@ -486,6 +620,34 @@ title="Print to PDF"
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.get_swcon">
+<span class="sig-name descname"><span class="pre">get_swcon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.get_swcon"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.get_swcon" title="Permalink to this definition">#</a></dt>
+<dd><p>Get soil water conductivity (SWCON) constant for each soil layer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>simulation</strong> – Simulation name.</p></li>
+<li><p><strong>optional</strong> – Simulation name.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Array of SWCON values</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.remove_simulation">
+<span class="sig-name descname"><span class="pre">remove_simulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simulation</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.remove_simulation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.remove_simulation" title="Permalink to this definition">#</a></dt>
+<dd><p>Remove a simulation from the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>simulation</strong> – The name of the simulation to remove</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.results">
 <span class="sig-name descname"><span class="pre">results</span></span><a class="headerlink" href="#farmingpy.apsim.APSIMX.results" title="Permalink to this definition">#</a></dt>
@@ -519,6 +681,21 @@ title="Print to PDF"
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>out_path</strong> – Path of output .apsimx file, by default <cite>None</cite></p></li>
 <li><p><strong>optional</strong> – Path of output .apsimx file, by default <cite>None</cite></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.set_bd">
+<span class="sig-name descname"><span class="pre">set_bd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simulations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.set_bd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.set_bd" title="Permalink to this definition">#</a></dt>
+<dd><p>Set soil bulk density</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bd</strong> – Collection of values, has to be the same length as existing values.</p></li>
+<li><p><strong>simulations</strong> – List of simulation names to update, if <cite>None</cite> update all simulations</p></li>
+<li><p><strong>optional</strong> – List of simulation names to update, if <cite>None</cite> update all simulations</p></li>
 </ul>
 </dd>
 </dl>
@@ -663,6 +840,21 @@ title="Print to PDF"
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.set_swcon">
+<span class="sig-name descname"><span class="pre">set_swcon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">swcon</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simulations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.set_swcon"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.set_swcon" title="Permalink to this definition">#</a></dt>
+<dd><p>Set soil water conductivity (SWCON) constant for each soil layer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>swcon</strong> – Collection of values, has to be the same length as existing values.</p></li>
+<li><p><strong>simulations</strong> – List of simulation names to update, if <cite>None</cite> update all simulations</p></li>
+<li><p><strong>optional</strong> – List of simulation names to update, if <cite>None</cite> update all simulations</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.set_weather">
 <span class="sig-name descname"><span class="pre">set_weather</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">weather_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simulations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.set_weather"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.set_weather" title="Permalink to this definition">#</a></dt>
 <dd><p>Set simulation weather file</p>
@@ -696,6 +888,11 @@ title="Print to PDF"
 <span class="sig-name descname"><span class="pre">show_weather</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/farmingpy/apsim/apsim.html#APSIMX.show_weather"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.show_weather" title="Permalink to this definition">#</a></dt>
 <dd><p>Show weather file for all simulations</p>
 </dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.simulations">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">simulations</span></span><a class="headerlink" href="#farmingpy.apsim.APSIMX.simulations" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.update_cultivar">

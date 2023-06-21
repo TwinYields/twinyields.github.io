@@ -374,8 +374,32 @@ title="Print to PDF"
 </dl>
 </p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.get_crop_ll" title="farmingpy.apsim.APSIMX.get_crop_ll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_crop_ll</span></code></a>([simulation])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.clone_simulation" title="farmingpy.apsim.APSIMX.clone_simulation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clone_simulation</span></code></a>(target[, simulation])</p></td>
+<td><p>Clone a simulation and add it to Model</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.clone_zone" title="farmingpy.apsim.APSIMX.clone_zone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clone_zone</span></code></a>(target, zone[, simulation])</p></td>
+<td><p>Clone a zone and add it to Model</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.find_physical_soil" title="farmingpy.apsim.APSIMX.find_physical_soil"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_physical_soil</span></code></a>([simulation])</p></td>
+<td><p>Find physical soil</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.find_simulations" title="farmingpy.apsim.APSIMX.find_simulations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_simulations</span></code></a>([simulations])</p></td>
+<td><p>Find simulations by name</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.find_zones" title="farmingpy.apsim.APSIMX.find_zones"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_zones</span></code></a>(simulation)</p></td>
+<td><p>Find zones from a simulation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.get_agpasture_crops" title="farmingpy.apsim.APSIMX.get_agpasture_crops"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_agpasture_crops</span></code></a>([simulations])</p></td>
+<td><p>Get AgPasture crops from simulations.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.get_bd" title="farmingpy.apsim.APSIMX.get_bd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_bd</span></code></a>([simulation])</p></td>
+<td><p>Get soil bulk density</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.get_crop_ll" title="farmingpy.apsim.APSIMX.get_crop_ll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_crop_ll</span></code></a>([simulation])</p></td>
 <td><p>Get crop lower limit</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.get_dates" title="farmingpy.apsim.APSIMX.get_dates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dates</span></code></a>([simulations])</p></td>
+<td><p>Get simulation dates</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.get_dul" title="farmingpy.apsim.APSIMX.get_dul"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dul</span></code></a>([simulation])</p></td>
 <td><p>Get soil dry upper limit (DUL)</p></td>
@@ -404,38 +428,50 @@ title="Print to PDF"
 <tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.get_soil" title="farmingpy.apsim.APSIMX.get_soil"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_soil</span></code></a>([simulation])</p></td>
 <td><p>Get soil definition as dataframe</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.get_swcon" title="farmingpy.apsim.APSIMX.get_swcon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_swcon</span></code></a>([simulation])</p></td>
+<td><p>Get soil water conductivity (SWCON) constant for each soil layer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.remove_simulation" title="farmingpy.apsim.APSIMX.remove_simulation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_simulation</span></code></a>(simulation)</p></td>
+<td><p>Remove a simulation from the model</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.run" title="farmingpy.apsim.APSIMX.run"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code></a>([simulations, clean, multithread])</p></td>
 <td><p>Run simulations</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.save" title="farmingpy.apsim.APSIMX.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>([out_path])</p></td>
 <td><p>Save the model</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_crop_ll" title="farmingpy.apsim.APSIMX.set_crop_ll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_crop_ll</span></code></a>(ll[, simulations])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_bd" title="farmingpy.apsim.APSIMX.set_bd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_bd</span></code></a>(bd[, simulations])</p></td>
+<td><p>Set soil bulk density</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_crop_ll" title="farmingpy.apsim.APSIMX.set_crop_ll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_crop_ll</span></code></a>(ll[, simulations])</p></td>
 <td><p>Set crop lower limit</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_dates" title="farmingpy.apsim.APSIMX.set_dates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_dates</span></code></a>([start_date, end_date, simulations])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_dates" title="farmingpy.apsim.APSIMX.set_dates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_dates</span></code></a>([start_date, end_date, simulations])</p></td>
 <td><p>Set simulation dates</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_dul" title="farmingpy.apsim.APSIMX.set_dul"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_dul</span></code></a>(dul[, simulations])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_dul" title="farmingpy.apsim.APSIMX.set_dul"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_dul</span></code></a>(dul[, simulations])</p></td>
 <td><p>Set soil dry upper limit (DUL)</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_initial_nh4" title="farmingpy.apsim.APSIMX.set_initial_nh4"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_initial_nh4</span></code></a>(values[, simulations])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_initial_nh4" title="farmingpy.apsim.APSIMX.set_initial_nh4"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_initial_nh4</span></code></a>(values[, simulations])</p></td>
 <td><p>Set soil initial NH4 content</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_initial_no3" title="farmingpy.apsim.APSIMX.set_initial_no3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_initial_no3</span></code></a>(values[, simulations])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_initial_no3" title="farmingpy.apsim.APSIMX.set_initial_no3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_initial_no3</span></code></a>(values[, simulations])</p></td>
 <td><p>Set soil initial NO3 content</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_initial_urea" title="farmingpy.apsim.APSIMX.set_initial_urea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_initial_urea</span></code></a>(values[, simulations])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_initial_urea" title="farmingpy.apsim.APSIMX.set_initial_urea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_initial_urea</span></code></a>(values[, simulations])</p></td>
 <td><p>Set soil initial urea content</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_ll15" title="farmingpy.apsim.APSIMX.set_ll15"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_ll15</span></code></a>(ll15[, simulations])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_ll15" title="farmingpy.apsim.APSIMX.set_ll15"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_ll15</span></code></a>(ll15[, simulations])</p></td>
 <td><p>Set soil water content lower limit (LL15)</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_report" title="farmingpy.apsim.APSIMX.set_report"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_report</span></code></a>(report[, simulations])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_report" title="farmingpy.apsim.APSIMX.set_report"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_report</span></code></a>(report[, simulations])</p></td>
 <td><p>Set APSIM report</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_sat" title="farmingpy.apsim.APSIMX.set_sat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_sat</span></code></a>(sat[, simulations])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_sat" title="farmingpy.apsim.APSIMX.set_sat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_sat</span></code></a>(sat[, simulations])</p></td>
 <td><p>Set soil saturated water content (SAT)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_swcon" title="farmingpy.apsim.APSIMX.set_swcon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_swcon</span></code></a>(swcon[, simulations])</p></td>
+<td><p>Set soil water conductivity (SWCON) constant for each soil layer.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.set_weather" title="farmingpy.apsim.APSIMX.set_weather"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_weather</span></code></a>(weather_file[, simulations])</p></td>
 <td><p>Set simulation weather file</p></td>
@@ -461,7 +497,10 @@ title="Print to PDF"
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.results" title="farmingpy.apsim.APSIMX.results"><code class="xref py py-obj docutils literal notranslate"><span class="pre">results</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.simulations" title="farmingpy.apsim.APSIMX.simulations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">simulations</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMX.results" title="farmingpy.apsim.APSIMX.results"><code class="xref py py-obj docutils literal notranslate"><span class="pre">results</span></code></a></p></td>
 <td><p>Simulation results as dataframe</p></td>
 </tr>
 </tbody>
