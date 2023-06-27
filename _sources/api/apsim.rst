@@ -9,10 +9,16 @@ farmingpy.apsim API
     :nosignatures:
 
     APSIMX
+    APSIMXEnsemble
     PhenologyOptimizer
     SoilOptimizer
 
+
 .. autoclass:: APSIMX
+    :members:
+    :undoc-members:
+
+.. autoclass:: APSIMXEnsemble
     :members:
     :undoc-members:
 

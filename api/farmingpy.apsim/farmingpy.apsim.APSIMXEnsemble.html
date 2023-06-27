@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>farmingpy.apsim.SoilOptimizer &#8212; TwinYields</title>
+    <title>farmingpy.apsim.APSIMXEnsemble &#8212; TwinYields</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="farmingpy.apsim.PhenologyOptimizer" href="farmingpy.apsim.PhenologyOptimizer.html" />
+    <link rel="prev" title="farmingpy.apsim.APSIMX" href="farmingpy.apsim.APSIMX.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -111,7 +113,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../farmingpy.html">
    farmingpy API
@@ -129,28 +131,33 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="../apsim.html">
    farmingpy.apsim API
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../farmingpy.apsim/farmingpy.apsim.APSIMX.html">
+    <a class="reference internal" href="farmingpy.apsim.APSIMX.html">
      farmingpy.apsim.APSIMX
     </a>
    </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     farmingpy.apsim.APSIMXEnsemble
+    </a>
+   </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../farmingpy.apsim/farmingpy.apsim.PhenologyOptimizer.html">
+    <a class="reference internal" href="farmingpy.apsim.PhenologyOptimizer.html">
      farmingpy.apsim.PhenologyOptimizer
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../farmingpy.apsim/farmingpy.apsim.SoilOptimizer.html">
+    <a class="reference internal" href="farmingpy.apsim.SoilOptimizer.html">
      farmingpy.apsim.SoilOptimizer
     </a>
    </li>
@@ -246,7 +253,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/TwinYields/twinyields-docs.git/issues/new?title=Issue%20on%20page%20%2Fapi/apsim/farmingpy.apsim.SoilOptimizer.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/TwinYields/twinyields-docs.git/issues/new?title=Issue%20on%20page%20%2Fapi/farmingpy.apsim/farmingpy.apsim.APSIMXEnsemble.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -274,7 +281,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/api/apsim/farmingpy.apsim.SoilOptimizer.rst"
+        <a href="../../_sources/api/farmingpy.apsim/farmingpy.apsim.APSIMXEnsemble.rst"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -323,7 +330,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>farmingpy.apsim.SoilOptimizer</h1>
+                <h1>farmingpy.apsim.APSIMXEnsemble</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -335,31 +342,26 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="farmingpy-apsim-soiloptimizer">
-<h1>farmingpy.apsim.SoilOptimizer<a class="headerlink" href="#farmingpy-apsim-soiloptimizer" title="Permalink to this headline">#</a></h1>
+  <section id="farmingpy-apsim-apsimxensemble">
+<h1>farmingpy.apsim.APSIMXEnsemble<a class="headerlink" href="#farmingpy-apsim-apsimxensemble" title="Permalink to this headline">#</a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="farmingpy.apsim.SoilOptimizer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SoilOptimizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obs_yield</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obs_lai</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">harvest_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zone_names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multithread</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/farmingpy/apsim/optimizer.html#SoilOptimizer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.SoilOptimizer" title="Permalink to this definition">#</a></dt>
-<dd><p>Optimize soil paramters.</p>
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMXEnsemble">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">APSIMXEnsemble</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Models.Core.IModel</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ncores</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/farmingpy/apsim/ensemble.html#APSIMXEnsemble"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMXEnsemble" title="Permalink to this definition">#</a></dt>
+<dd><p>Ensemble of APSIM simulation models.
+Requires custom build of APSIM from:
+<a class="reference external" href="https://github.com/mpastell/ApsimX/tree/clock_management">https://github.com/mpastell/ApsimX/tree/clock_management</a></p>
 <dl class="py method">
-<dt class="sig sig-object py" id="farmingpy.apsim.SoilOptimizer.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obs_yield</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obs_lai</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">harvest_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zone_names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multithread</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/farmingpy/apsim/optimizer.html#SoilOptimizer.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.SoilOptimizer.__init__" title="Permalink to this definition">#</a></dt>
-<dd><p>Optimize model parameters</p>
-<dl class="field-list simple">
+<dt class="sig sig-object py" id="farmingpy.apsim.APSIMXEnsemble.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Models.Core.IModel</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ncores</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/farmingpy/apsim/ensemble.html#APSIMXEnsemble.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMXEnsemble.__init__" title="Permalink to this definition">#</a></dt>
+<dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>model</strong> – APSIMX object</p></li>
-<li><p><strong>params</strong> – Dictionary of soil parameters to optimize with allowed ranges.
-The range indicates difference to original values.
-e.g. <code class="docutils literal notranslate"><span class="pre">{&quot;ll15&quot;</span> <span class="pre">:</span> <span class="pre">(-0.01,</span> <span class="pre">0.05),</span> <span class="pre">&quot;dul&quot;</span> <span class="pre">:</span> <span class="pre">(0.0,</span> <span class="pre">-0.05)}</span></code>. Supported parameters are:
-<code class="docutils literal notranslate"><span class="pre">ll15,</span> <span class="pre">dul,</span> <span class="pre">no3,</span> <span class="pre">nh4,</span> <span class="pre">urea</span></code>. The same change is applied to all soil layers.</p></li>
-<li><p><strong>obs_yield</strong> – Dataframe with observed yield for each zone.</p></li>
-<li><p><strong>obs_lai</strong> – Dataframe with observed LAI for each zone.</p></li>
-<li><p><strong>harvest_date</strong> – Harvest date as datetime</p></li>
-<li><p><strong>zone_names</strong> – Name of zones to optimize.</p></li>
-<li><p><strong>optional</strong> – Name of zones to optimize.</p></li>
-<li><p><strong>multithread</strong> – Allow APSIM to use multiple threads, by default True</p></li>
-<li><p><strong>optional</strong> – Allow APSIM to use multiple threads, by default True</p></li>
+<li><p><strong>model</strong> – Union[str, IModel] Base model for the ensemble.
+Path to .apsimx file or C# Models.Core.Simulations object
+Should contain single simulation with single field and
+needs to use TwinClock.</p></li>
+<li><p><strong>N</strong> – Number of ensemble members</p></li>
+<li><p><strong>Ncores</strong> – Number of cores to use, if -1 all physical cores are used.</p></li>
 </ul>
 </dd>
 </dl>
@@ -372,11 +374,25 @@ e.g. <code class="docutils literal notranslate"><span class="pre">{&quot;ll15&qu
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../farmingpy.apsim/farmingpy.apsim.SoilOptimizer.html#farmingpy.apsim.SoilOptimizer.__init__" title="farmingpy.apsim.SoilOptimizer.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(model, params, obs_yield, obs_lai, ...)</p></td>
-<td><p>Optimize model parameters</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#farmingpy.apsim.APSIMXEnsemble.__init__" title="farmingpy.apsim.APSIMXEnsemble.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(model[, N, Ncores])</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">param model</dt>
+<dd class="field-odd"><p>Union[str, IModel] Base model for the ensemble.</p>
+</dd>
+</dl>
+</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.SoilOptimizer.optimize" title="farmingpy.apsim.SoilOptimizer.optimize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimize</span></code></a>([alg, maxeval])</p></td>
-<td><p>Run the optimizer</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMXEnsemble.commence" title="farmingpy.apsim.APSIMXEnsemble.commence"><code class="xref py py-obj docutils literal notranslate"><span class="pre">commence</span></code></a>()</p></td>
+<td><p>Commence the simulation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMXEnsemble.done" title="farmingpy.apsim.APSIMXEnsemble.done"><code class="xref py py-obj docutils literal notranslate"><span class="pre">done</span></code></a>()</p></td>
+<td><p>Call at the end of simulation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMXEnsemble.run" title="farmingpy.apsim.APSIMXEnsemble.run"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code></a>([reportclass])</p></td>
+<td><p>Run the simulation, custom class can be used to control reporting.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMXEnsemble.step" title="farmingpy.apsim.APSIMXEnsemble.step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">step</span></code></a>()</p></td>
+<td><p>Proceed with one day</p></td>
 </tr>
 </tbody>
 </table>
@@ -387,11 +403,11 @@ e.g. <code class="docutils literal notranslate"><span class="pre">{&quot;ll15&qu
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimized_data</span></code></p></td>
-<td><p></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMXEnsemble.enddate" title="farmingpy.apsim.APSIMXEnsemble.enddate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enddate</span></code></a></p></td>
+<td><p>returns: Simulation end date :rtype: np.datetime64</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimized_parameters</span></code></p></td>
-<td><p></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../apsim.html#farmingpy.apsim.APSIMXEnsemble.today" title="farmingpy.apsim.APSIMXEnsemble.today"><code class="xref py py-obj docutils literal notranslate"><span class="pre">today</span></code></a></p></td>
+<td><p>returns: Current simulation date :rtype: np.datetime64</p></td>
 </tr>
 </tbody>
 </table>
@@ -412,7 +428,7 @@ e.g. <code class="docutils literal notranslate"><span class="pre">{&quot;ll15&qu
         },
         kernelOptions: {
             name: "python3",
-            path: "./api/apsim"
+            path: "./api/farmingpy.apsim"
         },
         predefinedOutput: true
     }
@@ -426,6 +442,20 @@ e.g. <code class="docutils literal notranslate"><span class="pre">{&quot;ll15&qu
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="farmingpy.apsim.APSIMX.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">farmingpy.apsim.APSIMX</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="farmingpy.apsim.PhenologyOptimizer.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">farmingpy.apsim.PhenologyOptimizer</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

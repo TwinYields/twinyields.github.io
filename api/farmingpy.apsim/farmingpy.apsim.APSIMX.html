@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="farmingpy.apsim.PhenologyOptimizer" href="farmingpy.apsim.PhenologyOptimizer.html" />
+    <link rel="next" title="farmingpy.apsim.APSIMXEnsemble" href="farmingpy.apsim.APSIMXEnsemble.html" />
     <link rel="prev" title="farmingpy.apsim API" href="../apsim.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -144,6 +144,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      farmingpy.apsim.APSIMX
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="farmingpy.apsim.APSIMXEnsemble.html">
+     farmingpy.apsim.APSIMXEnsemble
     </a>
    </li>
    <li class="toctree-l2">
@@ -341,15 +346,15 @@ title="Print to PDF"
 <h1>farmingpy.apsim.APSIMX<a class="headerlink" href="#farmingpy-apsim-apsimx" title="Permalink to this headline">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="farmingpy.apsim.APSIMX">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">APSIMX</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">apsimx_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/farmingpy/apsim/apsim.html#APSIMX"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">APSIMX</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Models.Core.Simulations</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/farmingpy/apsim/apsim.html#APSIMX"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX" title="Permalink to this definition">#</a></dt>
 <dd><p>Modify and run Apsim next generation simulation models.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="farmingpy.apsim.APSIMX.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">apsimx_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/farmingpy/apsim/apsim.html#APSIMX.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.__init__" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Models.Core.Simulations</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/farmingpy/apsim/apsim.html#APSIMX.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#farmingpy.apsim.APSIMX.__init__" title="Permalink to this definition">#</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>apsimx_file</strong> – Path to .apsimx file</p></li>
+<li><p><strong>model</strong> – Path to .apsimx file or C# Models.Core.Simulations object</p></li>
 <li><p><strong>copy</strong> – If <cite>True</cite> a copy of original simulation will be created on init, by default True.</p></li>
 <li><p><strong>optional</strong> – If <cite>True</cite> a copy of original simulation will be created on init, by default True.</p></li>
 <li><p><strong>out_path</strong> – Path of modified simulation, if <cite>None</cite> will be set automatically.</p></li>
@@ -366,10 +371,10 @@ title="Print to PDF"
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#farmingpy.apsim.APSIMX.__init__" title="farmingpy.apsim.APSIMX.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(apsimx_file[, copy, out_path])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#farmingpy.apsim.APSIMX.__init__" title="farmingpy.apsim.APSIMX.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(model[, copy, out_path])</p></td>
 <td><p><dl class="field-list simple">
-<dt class="field-odd">param apsimx_file</dt>
-<dd class="field-odd"><p>Path to .apsimx file</p>
+<dt class="field-odd">param model</dt>
+<dd class="field-odd"><p>Path to .apsimx file or C# Models.Core.Simulations object</p>
 </dd>
 </dl>
 </p></td>
@@ -543,10 +548,10 @@ title="Print to PDF"
             <p class="prev-next-title">farmingpy.apsim API</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="farmingpy.apsim.PhenologyOptimizer.html" title="next page">
+    <a class='right-next' id="next-link" href="farmingpy.apsim.APSIMXEnsemble.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">farmingpy.apsim.PhenologyOptimizer</p>
+        <p class="prev-next-title">farmingpy.apsim.APSIMXEnsemble</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
