@@ -1,3 +1,4 @@
 _build
 api/farmingpy
 api/farmingpy.apsim
+.DS_Store
