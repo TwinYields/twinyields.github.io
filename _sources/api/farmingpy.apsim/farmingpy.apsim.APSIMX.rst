@@ -23,16 +23,20 @@
       ~APSIMX.get_bd
       ~APSIMX.get_crop_ll
       ~APSIMX.get_dates
+      ~APSIMX.get_default_phenological_parameters
       ~APSIMX.get_dul
       ~APSIMX.get_initial_nh4
       ~APSIMX.get_initial_no3
       ~APSIMX.get_initial_urea
+      ~APSIMX.get_ksat
       ~APSIMX.get_ll15
       ~APSIMX.get_management
       ~APSIMX.get_report
       ~APSIMX.get_sat
       ~APSIMX.get_soil
+      ~APSIMX.get_sw
       ~APSIMX.get_swcon
+      ~APSIMX.print_cultivar
       ~APSIMX.remove_simulation
       ~APSIMX.run
       ~APSIMX.save
@@ -43,9 +47,12 @@
       ~APSIMX.set_initial_nh4
       ~APSIMX.set_initial_no3
       ~APSIMX.set_initial_urea
+      ~APSIMX.set_ksat
       ~APSIMX.set_ll15
       ~APSIMX.set_report
       ~APSIMX.set_sat
+      ~APSIMX.set_soil
+      ~APSIMX.set_sw
       ~APSIMX.set_swcon
       ~APSIMX.set_weather
       ~APSIMX.show_management

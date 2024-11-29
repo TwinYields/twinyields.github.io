@@ -1,298 +1,329 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../../../" >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>farmingpy.apsim.apsim &#8212; TwinYields</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/farmingpy/apsim/apsim';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
     
-    <div class="container-fluid" id="banner"></div>
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
 
-    
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../../index.html">
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
         
       
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      <img src="../../../_static/twinlogo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">TwinYields</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../../../_static/twinlogo.png" class="logo__image only-light" alt="TwinYields - Home"/>
+    <img src="../../../_static/twinlogo.png" class="logo__image only-dark pst-js-only" alt="TwinYields - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../../../intro.html">
-                    TwinYields - Digital Twin for Supporting Smart Farming Operations
+                    farmingpy: a Python package for developing Digital Twins of precision farming systems
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../../api/farmingpy.html">
-   farmingpy API
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../api/farmingpy/farmingpy.TimeLogData.html">
-     farmingpy.TimeLogData
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../../api/apsim.html">
-   farmingpy.apsim API
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../api/farmingpy.apsim/farmingpy.apsim.APSIMX.html">
-     farmingpy.apsim.APSIMX
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../api/farmingpy.apsim/farmingpy.apsim.APSIMXEnsemble.html">
-     farmingpy.apsim.APSIMXEnsemble
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../api/farmingpy.apsim/farmingpy.apsim.PhenologyOptimizer.html">
-     farmingpy.apsim.PhenologyOptimizer
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../api/farmingpy.apsim/farmingpy.apsim.SoilOptimizer.html">
-     farmingpy.apsim.SoilOptimizer
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../install.html">Installing farmingpy</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../api/farmingpy.html">farmingpy API</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/farmingpy/farmingpy.TimeLogData.html">farmingpy.TimeLogData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/farmingpy/farmingpy.TaskReader.html">farmingpy.TaskReader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/farmingpy.apsim/farmingpy.apsim.APSIMX.html">farmingpy.apsim.APSIMX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/farmingpy.apsim/farmingpy.apsim.APSIMXEnsemble.html">farmingpy.apsim.APSIMXEnsemble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/farmingpy.apsim/farmingpy.apsim.PhenologyOptimizer.html">farmingpy.apsim.PhenologyOptimizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/farmingpy.apsim/farmingpy.apsim.SoilOptimizer.html">farmingpy.apsim.SoilOptimizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/farmingpy.eo/farmingpy.eo.BioPhysS2tbx.html">farmingpy.eo.BioPhysS2tbx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/farmingpy.eo/farmingpy.eo.read_planet.html">farmingpy.eo.read_planet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/farmingpy.eo/farmingpy.eo.planet_to_S2_dataset.html">farmingpy.eo.planet_to_S2_dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/farmingpy.soil/farmingpy.soil.EUPTF2.html">farmingpy.soil.EUPTF2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/farmingpy.soil/farmingpy.soil.Rosetta.html">farmingpy.soil.Rosetta</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/TwinYields/twinyields-docs.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/TwinYields/twinyields-docs.git/issues/new?title=Issue%20on%20page%20%2F_modules/farmingpy/apsim/apsim.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
 
-          
 
 
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/TwinYields/twinyields-docs.git"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
 
-      </li>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+
+</div></div>
       
-      <li>
-        <a href="https://github.com/TwinYields/twinyields-docs.git/issues/new?title=Issue%20on%20page%20%2F_modules/farmingpy/apsim/apsim.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
+    </div>
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
 </div>
+</div>
+              
+              
 
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
     </div>
 </div>
 
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                    </div>
-                </div>
-            </div>
-            <main id="main-content" role="main">
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
   <h1>Source code for farmingpy.apsim.apsim</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">Interface to APSIM simulation models using Python.NET.</span>
@@ -353,11 +384,15 @@ title="Open an issue"
 <span class="kn">from</span> <span class="nn">Models.AgPasture</span> <span class="kn">import</span> <span class="n">PastureSpecies</span>
 <span class="kn">from</span> <span class="nn">Models.Core</span> <span class="kn">import</span> <span class="n">Simulations</span>
 
-<div class="viewcode-block" id="APSIMX"><a class="viewcode-back" href="../../../api/farmingpy.apsim/farmingpy.apsim.APSIMX.html#farmingpy.apsim.APSIMX">[docs]</a><span class="k">class</span> <span class="nc">APSIMX</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;Modify and run Apsim next generation simulation models.&quot;&quot;&quot;</span>
+<div class="viewcode-block" id="APSIMX">
+<a class="viewcode-back" href="../../../api/farmingpy.apsim/farmingpy.apsim.APSIMX.html#farmingpy.apsim.APSIMX">[docs]</a>
+<span class="k">class</span> <span class="nc">APSIMX</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Modify and run Apsim next generation simulation models.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="APSIMX.__init__"><a class="viewcode-back" href="../../../api/farmingpy.apsim/farmingpy.apsim.APSIMX.html#farmingpy.apsim.APSIMX.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span> <span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Simulations</span><span class="p">],</span> <span class="n">copy</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">out_path</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<div class="viewcode-block" id="APSIMX.__init__">
+<a class="viewcode-back" href="../../../api/farmingpy.apsim/farmingpy.apsim.APSIMX.html#farmingpy.apsim.APSIMX.__init__">[docs]</a>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span> <span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Simulations</span><span class="p">],</span> <span class="n">copy</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">out_path</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 
@@ -410,6 +445,7 @@ title="Open an issue"
         <span class="k">except</span><span class="p">:</span>
             <span class="k">pass</span></div>
 
+
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">simulations</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">FindAllChildren</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">Core</span><span class="o">.</span><span class="n">Simulation</span><span class="p">]())</span>
@@ -435,8 +471,8 @@ title="Open an issue"
         <span class="bp">self</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_load</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.save"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.save">[docs]</a>    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">out_path</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Save the model</span>
+    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">out_path</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Save the model</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -447,10 +483,10 @@ title="Open an issue"
             <span class="n">out_path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span>
         <span class="n">json</span> <span class="o">=</span> <span class="n">Models</span><span class="o">.</span><span class="n">Core</span><span class="o">.</span><span class="n">ApsimFile</span><span class="o">.</span><span class="n">FileFormat</span><span class="o">.</span><span class="n">WriteToString</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Model</span><span class="p">)</span>
         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="p">)</span></div>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.run"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">clean</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">multithread</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Run simulations</span>
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">clean</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">multithread</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Run simulations</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -471,6 +507,8 @@ title="Open an issue"
         <span class="k">if</span> <span class="n">clean</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_DataStore</span><span class="o">.</span><span class="n">Dispose</span><span class="p">()</span>
             <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_DataStore</span><span class="o">.</span><span class="n">FileName</span><span class="p">)</span><span class="o">.</span><span class="n">unlink</span><span class="p">(</span><span class="n">missing_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_DataStore</span><span class="o">.</span><span class="n">FileName</span> <span class="o">+</span> <span class="s2">&quot;-wal&quot;</span> <span class="p">)</span><span class="o">.</span><span class="n">unlink</span><span class="p">(</span><span class="n">missing_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_DataStore</span><span class="o">.</span><span class="n">FileName</span> <span class="o">+</span> <span class="s2">&quot;-shm&quot;</span> <span class="p">)</span><span class="o">.</span><span class="n">unlink</span><span class="p">(</span><span class="n">missing_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_DataStore</span><span class="o">.</span><span class="n">Open</span><span class="p">()</span>
         <span class="k">if</span> <span class="n">simulations</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">r</span> <span class="o">=</span> <span class="n">Models</span><span class="o">.</span><span class="n">Core</span><span class="o">.</span><span class="n">Run</span><span class="o">.</span><span class="n">Runner</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Model</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">runtype</span><span class="p">)</span>
@@ -490,10 +528,10 @@ title="Open an issue"
             <span class="bp">self</span><span class="o">.</span><span class="n">harvest_date</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">WheatPhenologyCurrentStageName</span>  <span class="o">==</span> <span class="s1">&#39;HarvestRipe&#39;</span><span class="p">,</span>
                                     <span class="p">[</span><span class="s2">&quot;Zone&quot;</span><span class="p">,</span> <span class="s2">&quot;ClockToday&quot;</span><span class="p">]]</span>
         <span class="k">except</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">harvest_date</span> <span class="o">=</span> <span class="kc">None</span></div>
+            <span class="bp">self</span><span class="o">.</span><span class="n">harvest_date</span> <span class="o">=</span> <span class="kc">None</span>
 
-<div class="viewcode-block" id="APSIMX.clone_simulation"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.clone_simulation">[docs]</a>    <span class="k">def</span> <span class="nf">clone_simulation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Clone a simulation and add it to Model</span>
+    <span class="k">def</span> <span class="nf">clone_simulation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Clone a simulation and add it to Model</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -511,10 +549,10 @@ title="Open an issue"
         <span class="c1">#clone_zone.Name = target</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Children</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="n">clone_sim</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_reload</span><span class="p">()</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reload</span><span class="p">()</span>
 
-<div class="viewcode-block" id="APSIMX.remove_simulation"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.remove_simulation">[docs]</a>    <span class="k">def</span> <span class="nf">remove_simulation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Remove a simulation from the model</span>
+    <span class="k">def</span> <span class="nf">remove_simulation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Remove a simulation from the model</span>
 
 <span class="sd">            Parameters</span>
 <span class="sd">            ----------</span>
@@ -525,10 +563,10 @@ title="Open an issue"
         <span class="n">sim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_simulation</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Children</span><span class="o">.</span><span class="n">Remove</span><span class="p">(</span><span class="n">sim</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_load</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_load</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.clone_zone"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.clone_zone">[docs]</a>    <span class="k">def</span> <span class="nf">clone_zone</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">zone</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Clone a zone and add it to Model</span>
+    <span class="k">def</span> <span class="nf">clone_zone</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">zone</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Clone a zone and add it to Model</span>
 
 <span class="sd">            Parameters</span>
 <span class="sd">            ----------</span>
@@ -546,10 +584,10 @@ title="Open an issue"
         <span class="n">clone_zone</span><span class="o">.</span><span class="n">Name</span> <span class="o">=</span> <span class="n">target</span>
         <span class="n">sim</span><span class="o">.</span><span class="n">Children</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="n">clone_zone</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_load</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_load</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.find_zones"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.find_zones">[docs]</a>    <span class="k">def</span> <span class="nf">find_zones</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Find zones from a simulation</span>
+    <span class="k">def</span> <span class="nf">find_zones</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Find zones from a simulation</span>
 
 <span class="sd">            Parameters</span>
 <span class="sd">            ----------</span>
@@ -563,7 +601,7 @@ title="Open an issue"
 
         <span class="n">sim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_simulation</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
         <span class="n">zones</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindAllDescendants</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">Core</span><span class="o">.</span><span class="n">Zone</span><span class="p">]()</span>
-        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">zones</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">zones</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_read_results</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1">#df = pd.read_sql_table(&quot;Report&quot;, &quot;sqlite:///&quot; + self.datastore) # errors with datetime since 5/2023</span>
@@ -576,7 +614,7 @@ title="Open an issue"
             <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;Unable to parse time format, &#39;ClockToday&#39; column is still a string&quot;</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">df</span>
 
-    <span class="sd">&quot;&quot;&quot;Convert cultivar command to dict&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Convert cultivar command to dict&quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">_cultivar_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cultivar</span><span class="p">):</span>
         <span class="n">cmd</span> <span class="o">=</span> <span class="n">cultivar</span><span class="o">.</span><span class="n">Command</span>
         <span class="n">params</span> <span class="o">=</span> <span class="p">{}</span>
@@ -586,8 +624,8 @@ title="Open an issue"
                 <span class="n">params</span><span class="p">[</span><span class="n">p</span><span class="o">.</span><span class="n">strip</span><span class="p">()]</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
         <span class="k">return</span> <span class="n">params</span>
 
-<div class="viewcode-block" id="APSIMX.update_cultivar"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.update_cultivar">[docs]</a>    <span class="k">def</span> <span class="nf">update_cultivar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">clear</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Update cultivar parameters</span>
+    <span class="k">def</span> <span class="nf">update_cultivar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">clear</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Update cultivar parameters</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -607,10 +645,45 @@ title="Open an issue"
                 <span class="n">params</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cultivar_params</span><span class="p">(</span><span class="n">cultivar</span><span class="p">)</span>
                 <span class="n">params</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
             <span class="n">cultivar</span><span class="o">.</span><span class="n">Command</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">=</span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">params</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">cultivar_command</span> <span class="o">=</span> <span class="n">params</span></div>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cultivar_command</span> <span class="o">=</span> <span class="n">params</span>
 
-<div class="viewcode-block" id="APSIMX.show_management"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.show_management">[docs]</a>    <span class="k">def</span> <span class="nf">show_management</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Show management</span>
+    <span class="k">def</span> <span class="nf">print_cultivar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Print current cultivar parameters, can be copied to APSIM user interface</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        simulation, optional</span>
+<span class="sd">                Simulation name to be cloned, of None clone the first simulation in model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">sim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_simulation</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
+        <span class="n">zone</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindChild</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">Core</span><span class="o">.</span><span class="n">Zone</span><span class="p">]()</span>
+        <span class="n">cultivar</span> <span class="o">=</span> <span class="n">zone</span><span class="o">.</span><span class="n">Plants</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">FindChild</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">PMF</span><span class="o">.</span><span class="n">Cultivar</span><span class="p">]()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">cultivar</span><span class="o">.</span><span class="n">Command</span><span class="p">)))</span>
+
+    <span class="k">def</span> <span class="nf">get_default_phenological_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return all default parameters for a PMF crop in the simulation</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        simulation, optional</span>
+<span class="sd">                Simulation name to be cloned, of None clone the first simulation in model</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">            dictionary of parameters with default values</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">sim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_simulation</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
+        <span class="n">phenology</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">PMF</span><span class="o">.</span><span class="n">Phen</span><span class="o">.</span><span class="n">Phenology</span><span class="p">]()</span>
+        <span class="n">targets</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">phenology</span><span class="o">.</span><span class="n">FindAllDescendants</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">Functions</span><span class="o">.</span><span class="n">Constant</span><span class="p">]():</span>
+            <span class="n">pth</span> <span class="o">=</span> <span class="n">ch</span><span class="o">.</span><span class="n">FullPath</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;Phenology.&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">targets</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;[Phenology].</span><span class="si">{</span><span class="n">pth</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ch</span><span class="o">.</span><span class="n">Value</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">targets</span>
+
+    <span class="k">def</span> <span class="nf">show_management</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Show management</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -623,10 +696,10 @@ title="Open an issue"
             <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="n">zone</span><span class="o">.</span><span class="n">FindAllChildren</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">Manager</span><span class="p">]():</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">.</span><span class="n">Name</span><span class="p">,</span> <span class="s2">&quot;:&quot;</span><span class="p">)</span>
                 <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">action</span><span class="o">.</span><span class="n">Parameters</span><span class="p">:</span>
-                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">param</span><span class="o">.</span><span class="n">Key</span><span class="p">,</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">param</span><span class="o">.</span><span class="n">Value</span><span class="p">)</span></div>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">param</span><span class="o">.</span><span class="n">Key</span><span class="p">,</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">param</span><span class="o">.</span><span class="n">Value</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.update_management"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.update_management">[docs]</a>    <span class="k">def</span> <span class="nf">update_management</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">management</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">reload</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Update management</span>
+    <span class="k">def</span> <span class="nf">update_management</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">management</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">reload</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Update management</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -652,14 +725,14 @@ title="Open an issue"
         <span class="c1"># haven&#39;t figured out another way to make it work</span>
         <span class="k">if</span> <span class="n">reload</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_load</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span></div>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_load</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
 
     <span class="c1"># Convert CS KeyValuePair to dictionary</span>
     <span class="k">def</span> <span class="nf">_kvtodict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">kv</span><span class="p">):</span>
         <span class="k">return</span> <span class="p">{</span><span class="n">kv</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">Key</span> <span class="p">:</span> <span class="n">kv</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">Value</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">kv</span><span class="o">.</span><span class="n">Count</span><span class="p">)}</span>
 
-<div class="viewcode-block" id="APSIMX.get_management"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_management">[docs]</a>    <span class="k">def</span> <span class="nf">get_management</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get management of all simulations as dataframe&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">get_management</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get management of all simulations as dataframe&quot;&quot;&quot;</span>
         <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">simulations</span><span class="p">:</span>
             <span class="n">actions</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindAllDescendants</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">Manager</span><span class="p">]()</span>
@@ -676,10 +749,10 @@ title="Open an issue"
 
             <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
                 <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.get_agpasture_crops"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_agpasture_crops">[docs]</a>    <span class="k">def</span> <span class="nf">get_agpasture_crops</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get AgPasture crops from simulations.</span>
+    <span class="k">def</span> <span class="nf">get_agpasture_crops</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get AgPasture crops from simulations.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -697,10 +770,10 @@ title="Open an issue"
         <span class="n">species</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_simulations</span><span class="p">(</span><span class="n">simulations</span><span class="p">):</span>
             <span class="n">species</span> <span class="o">+=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindAllDescendants</span><span class="p">[</span><span class="n">PastureSpecies</span><span class="p">]()</span>
-        <span class="k">return</span> <span class="n">species</span></div>
+        <span class="k">return</span> <span class="n">species</span>
 
-<div class="viewcode-block" id="APSIMX.set_dates"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_dates">[docs]</a>    <span class="k">def</span> <span class="nf">set_dates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start_date</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">end_date</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set simulation dates</span>
+    <span class="k">def</span> <span class="nf">set_dates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start_date</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">end_date</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set simulation dates</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -718,10 +791,10 @@ title="Open an issue"
                 <span class="n">clock</span><span class="o">.</span><span class="n">StartDate</span> <span class="o">=</span> <span class="n">DateTime</span><span class="o">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">start_date</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">end_date</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="c1">#clock.End = DateTime(end_time.year, end_time.month, end_time.day, 0, 0, 0)</span>
-                <span class="n">clock</span><span class="o">.</span><span class="n">EndDate</span> <span class="o">=</span> <span class="n">DateTime</span><span class="o">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">end_date</span><span class="p">)</span></div>
+                <span class="n">clock</span><span class="o">.</span><span class="n">EndDate</span> <span class="o">=</span> <span class="n">DateTime</span><span class="o">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">end_date</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.get_dates"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_dates">[docs]</a>    <span class="k">def</span> <span class="nf">get_dates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get simulation dates</span>
+    <span class="k">def</span> <span class="nf">get_dates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get simulation dates</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -739,10 +812,10 @@ title="Open an issue"
             <span class="n">dates</span><span class="p">[</span><span class="n">sim</span><span class="o">.</span><span class="n">Name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
             <span class="n">dates</span><span class="p">[</span><span class="n">sim</span><span class="o">.</span><span class="n">Name</span><span class="p">][</span><span class="s2">&quot;start&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="n">st</span><span class="o">.</span><span class="n">Year</span><span class="p">,</span> <span class="n">st</span><span class="o">.</span><span class="n">Month</span><span class="p">,</span> <span class="n">st</span><span class="o">.</span><span class="n">Day</span><span class="p">)</span>
             <span class="n">dates</span><span class="p">[</span><span class="n">sim</span><span class="o">.</span><span class="n">Name</span><span class="p">][</span><span class="s2">&quot;end&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="n">et</span><span class="o">.</span><span class="n">Year</span><span class="p">,</span> <span class="n">et</span><span class="o">.</span><span class="n">Month</span><span class="p">,</span> <span class="n">et</span><span class="o">.</span><span class="n">Day</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">dates</span></div>
+        <span class="k">return</span> <span class="n">dates</span>
 
-<div class="viewcode-block" id="APSIMX.set_weather"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_weather">[docs]</a>    <span class="k">def</span> <span class="nf">set_weather</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">weather_file</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set simulation weather file</span>
+    <span class="k">def</span> <span class="nf">set_weather</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">weather_file</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set simulation weather file</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -754,15 +827,15 @@ title="Open an issue"
         <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_simulations</span><span class="p">(</span><span class="n">simulations</span><span class="p">):</span>
             <span class="n">weathers</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindAllDescendants</span><span class="p">[</span><span class="n">Weather</span><span class="p">]()</span>
             <span class="k">for</span> <span class="n">weather</span> <span class="ow">in</span> <span class="n">weathers</span><span class="p">:</span>
-                <span class="n">weather</span><span class="o">.</span><span class="n">FileName</span> <span class="o">=</span> <span class="n">weather_file</span></div>
+                <span class="n">weather</span><span class="o">.</span><span class="n">FileName</span> <span class="o">=</span> <span class="n">weather_file</span>
 
-<div class="viewcode-block" id="APSIMX.show_weather"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.show_weather">[docs]</a>    <span class="k">def</span> <span class="nf">show_weather</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Show weather file for all simulations&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">show_weather</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Show weather file for all simulations&quot;&quot;&quot;</span>
         <span class="k">for</span> <span class="n">weather</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">FindAllDescendants</span><span class="p">[</span><span class="n">Weather</span><span class="p">]():</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">weather</span><span class="o">.</span><span class="n">FileName</span><span class="p">)</span></div>
+            <span class="nb">print</span><span class="p">(</span><span class="n">weather</span><span class="o">.</span><span class="n">FileName</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.set_report"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_report">[docs]</a>    <span class="k">def</span> <span class="nf">set_report</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">report</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set APSIM report</span>
+    <span class="k">def</span> <span class="nf">set_report</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">report</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set APSIM report</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -774,10 +847,10 @@ title="Open an issue"
         <span class="n">simulations</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_simulations</span><span class="p">(</span><span class="n">simulations</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="n">simulations</span><span class="p">:</span>
             <span class="n">r</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">Report</span><span class="p">]()</span>
-            <span class="n">r</span><span class="o">.</span><span class="n">set_VariableNames</span><span class="p">(</span><span class="n">report</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">())</span></div>
+            <span class="n">r</span><span class="o">.</span><span class="n">set_VariableNames</span><span class="p">(</span><span class="n">report</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">())</span>
 
-<div class="viewcode-block" id="APSIMX.get_report"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_report">[docs]</a>    <span class="k">def</span> <span class="nf">get_report</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get current report string</span>
+    <span class="k">def</span> <span class="nf">get_report</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get current report string</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -789,10 +862,10 @@ title="Open an issue"
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">sim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_simulation</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
         <span class="n">report</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">FindAllDescendants</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">Report</span><span class="p">]())[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">report</span><span class="o">.</span><span class="n">get_VariableNames</span><span class="p">())</span></div>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">report</span><span class="o">.</span><span class="n">get_VariableNames</span><span class="p">())</span>
 
-<div class="viewcode-block" id="APSIMX.find_physical_soil"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.find_physical_soil">[docs]</a>    <span class="k">def</span> <span class="nf">find_physical_soil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Find physical soil</span>
+    <span class="k">def</span> <span class="nf">find_physical_soil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Find physical soil</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -806,11 +879,11 @@ title="Open an issue"
         <span class="n">sim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_simulation</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
         <span class="n">soil</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Soil</span><span class="p">]()</span>
         <span class="n">psoil</span> <span class="o">=</span> <span class="n">soil</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Physical</span><span class="p">]()</span>
-        <span class="k">return</span> <span class="n">psoil</span></div>
+        <span class="k">return</span> <span class="n">psoil</span>
 
     <span class="c1"># Find a list of simulations by name</span>
-<div class="viewcode-block" id="APSIMX.find_simulations"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.find_simulations">[docs]</a>    <span class="k">def</span> <span class="nf">find_simulations</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Find simulations by name</span>
+    <span class="k">def</span> <span class="nf">find_simulations</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulations</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Find simulations by name</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -832,7 +905,7 @@ title="Open an issue"
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sims</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not found!&quot;</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">sims</span></div>
+            <span class="k">return</span> <span class="n">sims</span>
 
     <span class="c1"># Find a single simulation by name</span>
     <span class="k">def</span> <span class="nf">_find_simulation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
@@ -848,8 +921,8 @@ title="Open an issue"
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">sim</span>
 
-<div class="viewcode-block" id="APSIMX.get_dul"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_dul">[docs]</a>    <span class="k">def</span> <span class="nf">get_dul</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get soil dry upper limit (DUL)</span>
+    <span class="k">def</span> <span class="nf">get_dul</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get soil dry upper limit (DUL)</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -860,10 +933,10 @@ title="Open an issue"
 <span class="sd">            Array of DUL values</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">psoil</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_physical_soil</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psoil</span><span class="o">.</span><span class="n">DUL</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psoil</span><span class="o">.</span><span class="n">DUL</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.set_dul"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_dul">[docs]</a>    <span class="k">def</span> <span class="nf">set_dul</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dul</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set soil dry upper limit (DUL)</span>
+    <span class="k">def</span> <span class="nf">set_dul</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dul</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set soil dry upper limit (DUL)</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -875,25 +948,73 @@ title="Open an issue"
         <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_simulations</span><span class="p">(</span><span class="n">simulations</span><span class="p">):</span>
             <span class="n">psoil</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Physical</span><span class="p">]()</span>
             <span class="n">psoil</span><span class="o">.</span><span class="n">DUL</span> <span class="o">=</span> <span class="n">dul</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_fix_crop_ll</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">Name</span><span class="p">)</span></div>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_fix_crop_ll</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">Name</span><span class="p">)</span>
 
-    <span class="c1"># Make sure that crop ll is below and above LL15 DUL in all layers</span>
+    <span class="c1"># Set crop LL to LL15 and make sure it&#39;s below DUL in all layers</span>
     <span class="k">def</span> <span class="nf">_fix_crop_ll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="p">):</span>
         <span class="n">tmp_cll</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_crop_ll</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
         <span class="n">dul</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_dul</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
         <span class="n">ll15</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_ll15</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tmp_cll</span><span class="p">)):</span>
             <span class="k">if</span> <span class="n">tmp_cll</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">dul</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
-                <span class="n">tmp_cll</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">dul</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="mf">0.01</span>
-
+                <span class="n">tmp_cll</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">dul</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="mf">0.02</span>
         <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tmp_cll</span><span class="p">)):</span>
-            <span class="k">if</span> <span class="n">tmp_cll</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">ll15</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
-                <span class="n">tmp_cll</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">ll15</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">tmp_cll</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">ll15</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">set_crop_ll</span><span class="p">(</span><span class="n">tmp_cll</span><span class="p">,</span> <span class="n">simulation</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.set_sat"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_sat">[docs]</a>    <span class="k">def</span> <span class="nf">set_sat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sat</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set soil saturated water content (SAT)</span>
+
+    <span class="k">def</span> <span class="nf">_fill_layer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">N_layers</span><span class="p">):</span>
+        <span class="n">ns</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ns</span> <span class="o">==</span> <span class="n">N_layers</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">p</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">pfill</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">N_layers</span> <span class="o">-</span><span class="n">ns</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">p</span><span class="p">,</span> <span class="n">pfill</span><span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">set_soil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">soildf</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set soil properties using a DataFrame</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        soildf</span>
+<span class="sd">            DataFrame with column names matching the parameter to be set. Soil</span>
+<span class="sd">            will be filled to have the same depth as current soil in the model.</span>
+<span class="sd">            cf. `get_soil`.</span>
+<span class="sd">        simulations, optional</span>
+<span class="sd">            List of simulation names to update, if `None` update all simulations</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">csoil</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_soil</span><span class="p">(</span><span class="n">simulations</span><span class="p">)</span>
+        <span class="n">N_layers</span> <span class="o">=</span> <span class="n">csoil</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">soildf</span><span class="p">:</span>
+            <span class="n">col</span> <span class="o">=</span> <span class="n">column</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="n">soildf</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+            <span class="n">new</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fill_layer</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">N_layers</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">col</span> <span class="o">==</span> <span class="s2">&quot;sat&quot;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">set_sat</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;fc_10&quot;</span><span class="p">,</span> <span class="s2">&quot;fc&quot;</span><span class="p">,</span> <span class="s2">&quot;dul&quot;</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">set_dul</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;wp&quot;</span><span class="p">,</span> <span class="s2">&quot;pwp&quot;</span><span class="p">,</span> <span class="s2">&quot;ll15&quot;</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">set_ll15</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;nh4&quot;</span><span class="p">,</span> <span class="s2">&quot;initial nh4&quot;</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">set_initial_nh4</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;no3&quot;</span><span class="p">,</span> <span class="s2">&quot;initial no3&quot;</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">set_initial_no3</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;bd&quot;</span><span class="p">,</span> <span class="s2">&quot;bulk density&quot;</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">set_bd</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;swcon&quot;</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">set_swcon</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span><span class="p">[</span><span class="s2">&quot;ksat&quot;</span><span class="p">,</span> <span class="s2">&quot;ksat_mm&quot;</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">set_ksat</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span><span class="p">[</span><span class="s2">&quot;sw&quot;</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">set_sw</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span>
+
+        <span class="c1">#SW can&#39;t exceed SAT</span>
+        <span class="n">csoil</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_soil</span><span class="p">(</span><span class="n">simulations</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_sw</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">csoil</span><span class="p">[[</span><span class="s2">&quot;SAT&quot;</span><span class="p">,</span> <span class="s2">&quot;SW&quot;</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">simulations</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">set_sat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sat</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set soil saturated water content (SAT)</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -906,10 +1027,10 @@ title="Open an issue"
         <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_simulations</span><span class="p">(</span><span class="n">simulations</span><span class="p">):</span>
             <span class="n">psoil</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Physical</span><span class="p">]()</span>
             <span class="n">psoil</span><span class="o">.</span><span class="n">SAT</span> <span class="o">=</span> <span class="n">sat</span>
-            <span class="n">psoil</span><span class="o">.</span><span class="n">SW</span> <span class="o">=</span> <span class="n">psoil</span><span class="o">.</span><span class="n">DUL</span></div>
+            <span class="n">psoil</span><span class="o">.</span><span class="n">SW</span> <span class="o">=</span> <span class="n">psoil</span><span class="o">.</span><span class="n">DUL</span>
 
-<div class="viewcode-block" id="APSIMX.get_sat"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_sat">[docs]</a>    <span class="k">def</span> <span class="nf">get_sat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get soil saturated water content (SAT)</span>
+    <span class="k">def</span> <span class="nf">get_sat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get soil saturated water content (SAT)</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -921,10 +1042,10 @@ title="Open an issue"
 <span class="sd">        &quot;&quot;&quot;</span>
 
         <span class="n">psoil</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_physical_soil</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psoil</span><span class="o">.</span><span class="n">SAT</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psoil</span><span class="o">.</span><span class="n">SAT</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.get_ll15"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_ll15">[docs]</a>    <span class="k">def</span> <span class="nf">get_ll15</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get soil water content lower limit (LL15)</span>
+    <span class="k">def</span> <span class="nf">get_ll15</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get soil water content lower limit (LL15)</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -935,10 +1056,10 @@ title="Open an issue"
 <span class="sd">            Array of LL15 values</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">psoil</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_physical_soil</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psoil</span><span class="o">.</span><span class="n">LL15</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psoil</span><span class="o">.</span><span class="n">LL15</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.set_ll15"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_ll15">[docs]</a>    <span class="k">def</span> <span class="nf">set_ll15</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ll15</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set soil water content lower limit (LL15)</span>
+    <span class="k">def</span> <span class="nf">set_ll15</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ll15</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set soil water content lower limit (LL15)</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -950,10 +1071,11 @@ title="Open an issue"
         <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_simulations</span><span class="p">(</span><span class="n">simulations</span><span class="p">):</span>
             <span class="n">psoil</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Physical</span><span class="p">]()</span>
             <span class="n">psoil</span><span class="o">.</span><span class="n">LL15</span> <span class="o">=</span> <span class="n">ll15</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_fix_crop_ll</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">Name</span><span class="p">)</span></div>
+            <span class="n">psoil</span><span class="o">.</span><span class="n">AirDry</span> <span class="o">=</span> <span class="n">ll15</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_fix_crop_ll</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">Name</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.set_bd"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_bd">[docs]</a>    <span class="k">def</span> <span class="nf">set_bd</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bd</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set soil bulk density</span>
+    <span class="k">def</span> <span class="nf">set_bd</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bd</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set soil bulk density</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -965,10 +1087,10 @@ title="Open an issue"
 
         <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_simulations</span><span class="p">(</span><span class="n">simulations</span><span class="p">):</span>
             <span class="n">psoil</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Physical</span><span class="p">]()</span>
-            <span class="n">psoil</span><span class="o">.</span><span class="n">BD</span> <span class="o">=</span> <span class="n">bd</span></div>
+            <span class="n">psoil</span><span class="o">.</span><span class="n">BD</span> <span class="o">=</span> <span class="n">bd</span>
 
-<div class="viewcode-block" id="APSIMX.get_bd"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_bd">[docs]</a>    <span class="k">def</span> <span class="nf">get_bd</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get soil bulk density</span>
+    <span class="k">def</span> <span class="nf">get_bd</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get soil bulk density</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -979,10 +1101,69 @@ title="Open an issue"
 <span class="sd">            Array of BD values</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">psoil</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_physical_soil</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psoil</span><span class="o">.</span><span class="n">BD</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psoil</span><span class="o">.</span><span class="n">BD</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.set_swcon"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_swcon">[docs]</a>    <span class="k">def</span> <span class="nf">set_swcon</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">swcon</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set soil water conductivity (SWCON) constant for each soil layer.</span>
+    <span class="k">def</span> <span class="nf">set_ksat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ksat</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set saturated hydraulic conductivity of soil mm/day</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        bd</span>
+<span class="sd">            Collection of values, has to be the same length as existing values.</span>
+<span class="sd">        simulations, optional</span>
+<span class="sd">            List of simulation names to update, if `None` update all simulations</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_simulations</span><span class="p">(</span><span class="n">simulations</span><span class="p">):</span>
+            <span class="n">psoil</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Physical</span><span class="p">]()</span>
+            <span class="n">psoil</span><span class="o">.</span><span class="n">KS</span> <span class="o">=</span> <span class="n">ksat</span>
+
+    <span class="k">def</span> <span class="nf">get_ksat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get saturated hydraulic conductivity of soil mm/day</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        simulation, optional</span>
+<span class="sd">            Simulation name.</span>
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">            Array of BD values</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">psoil</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_physical_soil</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psoil</span><span class="o">.</span><span class="n">KS</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">set_sw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sw</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set soil water content</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        bd</span>
+<span class="sd">            Collection of values, has to be the same length as existing values.</span>
+<span class="sd">        simulations, optional</span>
+<span class="sd">            List of simulation names to update, if `None` update all simulations</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_simulations</span><span class="p">(</span><span class="n">simulations</span><span class="p">):</span>
+            <span class="n">psoil</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Physical</span><span class="p">]()</span>
+            <span class="n">psoil</span><span class="o">.</span><span class="n">SW</span> <span class="o">=</span> <span class="n">sw</span>
+
+    <span class="k">def</span> <span class="nf">get_sw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get soil water content</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        simulation, optional</span>
+<span class="sd">            Simulation name.</span>
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">            Array of BD values</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">psoil</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_physical_soil</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psoil</span><span class="o">.</span><span class="n">SW</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">set_swcon</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">swcon</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set soil water conductivity (SWCON) constant for each soil layer.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -994,10 +1175,10 @@ title="Open an issue"
 
         <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_simulations</span><span class="p">(</span><span class="n">simulations</span><span class="p">):</span>
             <span class="n">wb</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">WaterModel</span><span class="o">.</span><span class="n">WaterBalance</span><span class="p">]()</span>
-            <span class="n">wb</span><span class="o">.</span><span class="n">SWCON</span> <span class="o">=</span> <span class="n">swcon</span></div>
+            <span class="n">wb</span><span class="o">.</span><span class="n">SWCON</span> <span class="o">=</span> <span class="n">swcon</span>
 
-<div class="viewcode-block" id="APSIMX.get_swcon"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_swcon">[docs]</a>    <span class="k">def</span> <span class="nf">get_swcon</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get soil water conductivity (SWCON) constant for each soil layer.</span>
+    <span class="k">def</span> <span class="nf">get_swcon</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get soil water conductivity (SWCON) constant for each soil layer.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1009,10 +1190,10 @@ title="Open an issue"
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">sim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_simulation</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
         <span class="n">wb</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Models</span><span class="o">.</span><span class="n">WaterModel</span><span class="o">.</span><span class="n">WaterBalance</span><span class="p">]()</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">wb</span><span class="o">.</span><span class="n">SWCON</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">wb</span><span class="o">.</span><span class="n">SWCON</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.get_crop_ll"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_crop_ll">[docs]</a>    <span class="k">def</span> <span class="nf">get_crop_ll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get crop lower limit</span>
+    <span class="k">def</span> <span class="nf">get_crop_ll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get crop lower limit</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1025,10 +1206,10 @@ title="Open an issue"
 
         <span class="n">psoil</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_physical_soil</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
         <span class="n">sc</span> <span class="o">=</span> <span class="n">psoil</span><span class="o">.</span><span class="n">FindChild</span><span class="p">[</span><span class="n">SoilCrop</span><span class="p">]()</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">sc</span><span class="o">.</span><span class="n">LL</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">sc</span><span class="o">.</span><span class="n">LL</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.set_crop_ll"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_crop_ll">[docs]</a>    <span class="k">def</span> <span class="nf">set_crop_ll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ll</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set crop lower limit</span>
+    <span class="k">def</span> <span class="nf">set_crop_ll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ll</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set crop lower limit</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1041,10 +1222,10 @@ title="Open an issue"
         <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_simulations</span><span class="p">(</span><span class="n">simulations</span><span class="p">):</span>
             <span class="n">psoil</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">FindDescendant</span><span class="p">[</span><span class="n">Physical</span><span class="p">]()</span>
             <span class="n">sc</span> <span class="o">=</span> <span class="n">psoil</span><span class="o">.</span><span class="n">FindChild</span><span class="p">[</span><span class="n">SoilCrop</span><span class="p">]()</span>
-            <span class="n">sc</span><span class="o">.</span><span class="n">LL</span> <span class="o">=</span> <span class="n">ll</span></div>
+            <span class="n">sc</span><span class="o">.</span><span class="n">LL</span> <span class="o">=</span> <span class="n">ll</span>
 
-<div class="viewcode-block" id="APSIMX.get_soil"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_soil">[docs]</a>    <span class="k">def</span> <span class="nf">get_soil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get soil definition as dataframe</span>
+    <span class="k">def</span> <span class="nf">get_soil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get soil definition as dataframe</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1062,11 +1243,14 @@ title="Open an issue"
         <span class="n">depth</span> <span class="o">=</span> <span class="n">psoil</span><span class="o">.</span><span class="n">Depth</span>
 
 
-        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Depth&quot;</span> <span class="p">:</span> <span class="n">depth</span><span class="p">,</span> <span class="s2">&quot;LL15&quot;</span> <span class="p">:</span> <span class="n">ll15</span><span class="p">,</span> <span class="s2">&quot;DUL&quot;</span> <span class="p">:</span> <span class="n">dul</span><span class="p">,</span> <span class="s2">&quot;SAT&quot;</span> <span class="p">:</span> <span class="n">sat</span><span class="p">,</span> <span class="s2">&quot;Crop LL&quot;</span> <span class="p">:</span> <span class="n">cll</span><span class="p">,</span>
+        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Depth&quot;</span> <span class="p">:</span> <span class="n">depth</span><span class="p">,</span> <span class="s2">&quot;LL15&quot;</span> <span class="p">:</span> <span class="n">ll15</span><span class="p">,</span> <span class="s2">&quot;DUL&quot;</span> <span class="p">:</span> <span class="n">dul</span><span class="p">,</span>
+                    <span class="s2">&quot;SAT&quot;</span> <span class="p">:</span> <span class="n">sat</span><span class="p">,</span> <span class="s2">&quot;Crop LL&quot;</span> <span class="p">:</span> <span class="n">cll</span><span class="p">,</span>
                     <span class="s2">&quot;Bulk density&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_bd</span><span class="p">(</span><span class="n">simulation</span><span class="p">),</span>
+                    <span class="s2">&quot;Ksat&quot;</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_ksat</span><span class="p">(</span><span class="n">simulation</span><span class="p">),</span>
+                    <span class="s2">&quot;SW&quot;</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_sw</span><span class="p">(</span><span class="n">simulation</span><span class="p">),</span>
                     <span class="s2">&quot;SWCON&quot;</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_swcon</span><span class="p">(</span><span class="n">simulation</span><span class="p">),</span>
                     <span class="s2">&quot;Initial NO3&quot;</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_initial_no3</span><span class="p">(</span><span class="n">simulation</span><span class="p">),</span>
-                    <span class="s2">&quot;Initial NH4&quot;</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_initial_nh4</span><span class="p">(</span><span class="n">simulation</span><span class="p">)})</span></div>
+                    <span class="s2">&quot;Initial NH4&quot;</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_initial_nh4</span><span class="p">(</span><span class="n">simulation</span><span class="p">)})</span>
 
     <span class="k">def</span> <span class="nf">_find_solute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">solute</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="n">sim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_simulation</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
@@ -1083,28 +1267,12 @@ title="Open an issue"
             <span class="n">s</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_solute</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">sim</span><span class="o">.</span><span class="n">Name</span><span class="p">)</span>
             <span class="n">s</span><span class="o">.</span><span class="n">InitialValues</span> <span class="o">=</span> <span class="n">values</span>
 
-<div class="viewcode-block" id="APSIMX.get_initial_no3"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_initial_no3">[docs]</a>    <span class="k">def</span> <span class="nf">get_initial_no3</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get soil initial NO3 content&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_initial_values</span><span class="p">(</span><span class="s2">&quot;NO3&quot;</span><span class="p">,</span> <span class="n">simulation</span><span class="p">)</span></div>
+    <span class="k">def</span> <span class="nf">get_initial_no3</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get soil initial NO3 content&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_initial_values</span><span class="p">(</span><span class="s2">&quot;NO3&quot;</span><span class="p">,</span> <span class="n">simulation</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.set_initial_no3"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_initial_no3">[docs]</a>    <span class="k">def</span> <span class="nf">set_initial_no3</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set soil initial NO3 content</span>
-
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        values</span>
-<span class="sd">            Collection of values, has to be the same length as existing values.</span>
-<span class="sd">        simulations, optional</span>
-<span class="sd">            List of simulation names to update, if `None` update all simulations</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_set_initial_values</span><span class="p">(</span><span class="s2">&quot;NO3&quot;</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="APSIMX.get_initial_nh4"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_initial_nh4">[docs]</a>    <span class="k">def</span> <span class="nf">get_initial_nh4</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get soil initial NH4 content&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_initial_values</span><span class="p">(</span><span class="s2">&quot;NH4&quot;</span><span class="p">,</span> <span class="n">simulation</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="APSIMX.set_initial_nh4"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_initial_nh4">[docs]</a>    <span class="k">def</span> <span class="nf">set_initial_nh4</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set soil initial NH4 content</span>
+    <span class="k">def</span> <span class="nf">set_initial_no3</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set soil initial NO3 content</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1113,15 +1281,14 @@ title="Open an issue"
 <span class="sd">        simulations, optional</span>
 <span class="sd">            List of simulation names to update, if `None` update all simulations</span>
 <span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_initial_values</span><span class="p">(</span><span class="s2">&quot;NO3&quot;</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">_set_initial_values</span><span class="p">(</span><span class="s2">&quot;NH4&quot;</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span></div>
+    <span class="k">def</span> <span class="nf">get_initial_nh4</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get soil initial NH4 content&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_initial_values</span><span class="p">(</span><span class="s2">&quot;NH4&quot;</span><span class="p">,</span> <span class="n">simulation</span><span class="p">)</span>
 
-<div class="viewcode-block" id="APSIMX.get_initial_urea"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.get_initial_urea">[docs]</a>    <span class="k">def</span> <span class="nf">get_initial_urea</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get soil initial urea content&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_initial_values</span><span class="p">(</span><span class="s2">&quot;Urea&quot;</span><span class="p">,</span> <span class="n">simulation</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="APSIMX.set_initial_urea"><a class="viewcode-back" href="../../../api/apsim.html#farmingpy.apsim.APSIMX.set_initial_urea">[docs]</a>    <span class="k">def</span> <span class="nf">set_initial_urea</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set soil initial urea content</span>
+    <span class="k">def</span> <span class="nf">set_initial_nh4</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set soil initial NH4 content</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1131,8 +1298,26 @@ title="Open an issue"
 <span class="sd">            List of simulation names to update, if `None` update all simulations</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_initial_values</span><span class="p">(</span><span class="s2">&quot;NH4&quot;</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">_set_initial_values</span><span class="p">(</span><span class="s2">&quot;Urea&quot;</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span></div></div>
+    <span class="k">def</span> <span class="nf">get_initial_urea</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get soil initial urea content&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_initial_values</span><span class="p">(</span><span class="s2">&quot;Urea&quot;</span><span class="p">,</span> <span class="n">simulation</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">set_initial_urea</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set soil initial urea content</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        values</span>
+<span class="sd">            Collection of values, has to be the same length as existing values.</span>
+<span class="sd">        simulations, optional</span>
+<span class="sd">            List of simulation names to update, if `None` update all simulations</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_initial_values</span><span class="p">(</span><span class="s2">&quot;Urea&quot;</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">simulations</span><span class="p">)</span></div>
+
 
 <span class="k">class</span> <span class="nc">Simulation</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
 
@@ -1188,36 +1373,70 @@ title="Open an issue"
 
 </pre></div>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By Luke, Finland<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By Luke, Finland
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

@@ -1,19 +1,25 @@
-# TwinYields - Digital Twin for Supporting Smart Farming Operations
+# farmingpy: a Python package for developing Digital Twins of precision farming systems
 
-TwinYields research project at [Natural Resources Institute Finland (Luke)](https://luke.fi/en) aims to develop a digital twin to support smart farming operations. All developed software is available under open licences.
+[farmingpy](https://github.com/TwinYields/farmingpy) is a Python library developed to support the development of digital twins for supporting precision farming. It is developed in the Digital Technologies in Agriculture group at at [Natural Resources Institute Finland (Luke)](https://luke.fi/en).
 
-This website hosts documentation for Python packages developed in the project. The following packages have been developed so far:
+The development of the package originated from Luke funder [TwinYields](https://www.luke.fi/en/projects/twinyields) research project and is currently further developed in the [ScaleAgData](https://scaleagdata.eu/en) Horizon Europe, and [INTEGRITY](https://integrity-agrisystems.com/) and [NSmartSystems](https://www.greenerahub.eu/nsmartsystems) ERA-NET projects.
 
-* [farmingpy](https://github.com/TwinYields/farmingpy). Python library for Smart Farming data and modeling. Enables reading of ISOBUS task files, EO data from SentinelHub and interfacing APSIM simulation models.
+farmingpy provides the following functionality:
+- Interfacing APSIM simulation model for setting up high resolution spatial simulations, running model ensembles for assimilating EO and sensor data with the APSIM simulation models, reading the simulation outputs and optimizing model parameters.
+- Reading planned and implemented ISOBUS task data.
+- Unified interface to USDA Rosetta and EUPTF2 pedotransfer function models to estimate soil water holding capacity based on soil data available from farms.
 
-* [twinyields](https://github.com/TwinYields/twinyields-python). Package to run the digital twin. Initializes the model and database. Retrieves sensor data and EO data and runs the model. The package is under active development and the API is not yet documented.
 
 
-The software with first modelling results are described in our preprint:
 
-> Bloch, V., Palosuo, T., Huitu, H., Ronkainen, A., Backman, J., Pussi, K., Suokannas, A., Pastell, M., 2022. Towards a digital twin for optimal field management. agriRxiv. https://doi.org/10.31220/agriRxiv.2022.00165
+### References:
 
-### Table of contents
+Pastell, M., Hartikainen, A., & Huitu, H. (2024). ScaleAgData Deliverable D4.2 Data-based farming services: Example notebooks for reference software. Zenodo. https://doi.org/10.5281/zenodo.12566023
+
+Bloch, V., Palosuo, T., Huitu, H., Ronkainen, A., Backman, J., Pussi, K., Suokannas, A., Pastell, M., 2023. 46. Towards a digital twin for optimal field management, in: Precision Agriculture ’23. Wageningen Academic Publishers, pp. 377–383. https://doi.org/10.3920/978-90-8686-947-3_46. [[preprint pdf](https://www.cabidigitallibrary.org/doi/epdf/10.31220/agriRxiv.2022.00165)]
+
+
+### Documentation
 
 
 ```{tableofcontents}

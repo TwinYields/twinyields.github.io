@@ -14,8 +14,12 @@
    .. autosummary::
    
       ~APSIMXEnsemble.__init__
+      ~APSIMXEnsemble.apply_fertilizer
       ~APSIMXEnsemble.commence
       ~APSIMXEnsemble.done
+      ~APSIMXEnsemble.fertilize_on
+      ~APSIMXEnsemble.irrigate
+      ~APSIMXEnsemble.irrigate_on
       ~APSIMXEnsemble.run
       ~APSIMXEnsemble.step
    

@@ -1,329 +1,364 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="./" >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index &#8212; TwinYields</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
     
-    <div class="container-fluid" id="banner"></div>
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
 
-    
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
         
       
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      <img src="_static/twinlogo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">TwinYields</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="_static/twinlogo.png" class="logo__image only-light" alt="TwinYields - Home"/>
+    <img src="_static/twinlogo.png" class="logo__image only-dark pst-js-only" alt="TwinYields - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    TwinYields - Digital Twin for Supporting Smart Farming Operations
+                    farmingpy: a Python package for developing Digital Twins of precision farming systems
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="api/farmingpy.html">
-   farmingpy API
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="api/farmingpy/farmingpy.TimeLogData.html">
-     farmingpy.TimeLogData
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="api/apsim.html">
-   farmingpy.apsim API
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="api/farmingpy.apsim/farmingpy.apsim.APSIMX.html">
-     farmingpy.apsim.APSIMX
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="api/farmingpy.apsim/farmingpy.apsim.APSIMXEnsemble.html">
-     farmingpy.apsim.APSIMXEnsemble
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="api/farmingpy.apsim/farmingpy.apsim.PhenologyOptimizer.html">
-     farmingpy.apsim.PhenologyOptimizer
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="api/farmingpy.apsim/farmingpy.apsim.SoilOptimizer.html">
-     farmingpy.apsim.SoilOptimizer
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing farmingpy</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api/farmingpy.html">farmingpy API</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/farmingpy/farmingpy.TimeLogData.html">farmingpy.TimeLogData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/farmingpy/farmingpy.TaskReader.html">farmingpy.TaskReader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/farmingpy.apsim/farmingpy.apsim.APSIMX.html">farmingpy.apsim.APSIMX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/farmingpy.apsim/farmingpy.apsim.APSIMXEnsemble.html">farmingpy.apsim.APSIMXEnsemble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/farmingpy.apsim/farmingpy.apsim.PhenologyOptimizer.html">farmingpy.apsim.PhenologyOptimizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/farmingpy.apsim/farmingpy.apsim.SoilOptimizer.html">farmingpy.apsim.SoilOptimizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/farmingpy.eo/farmingpy.eo.BioPhysS2tbx.html">farmingpy.eo.BioPhysS2tbx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/farmingpy.eo/farmingpy.eo.read_planet.html">farmingpy.eo.read_planet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/farmingpy.eo/farmingpy.eo.planet_to_S2_dataset.html">farmingpy.eo.planet_to_S2_dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/farmingpy.soil/farmingpy.soil.EUPTF2.html">farmingpy.soil.EUPTF2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/farmingpy.soil/farmingpy.soil.Rosetta.html">farmingpy.soil.Rosetta</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/TwinYields/twinyields-docs.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/TwinYields/twinyields-docs.git/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
 
-          
 
 
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/TwinYields/twinyields-docs.git"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
 
-      </li>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+
+</div></div>
       
-      <li>
-        <a href="https://github.com/TwinYields/twinyields-docs.git/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
+    </div>
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
 </div>
+</div>
+              
+              
 
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
     </div>
 </div>
 
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                    </div>
-                </div>
-            </div>
-            <main id="main-content" role="main">
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
 
 <h1 id="index">Index</h1>
 
 <div class="genindex-jumpbox">
  <a href="#_"><strong>_</strong></a>
  | <a href="#A"><strong>A</strong></a>
- | <a href="#C"><strong>C</strong></a>
- | <a href="#D"><strong>D</strong></a>
+ | <a href="#B"><strong>B</strong></a>
  | <a href="#E"><strong>E</strong></a>
- | <a href="#F"><strong>F</strong></a>
- | <a href="#G"><strong>G</strong></a>
- | <a href="#H"><strong>H</strong></a>
- | <a href="#O"><strong>O</strong></a>
  | <a href="#P"><strong>P</strong></a>
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
- | <a href="#U"><strong>U</strong></a>
  
 </div>
 <h2 id="_">_</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/eo.html#farmingpy.eo.BioPhysS2tbx.__call__">__call__() (BioPhysS2tbx method)</a>
+</li>
       <li><a href="api/farmingpy.apsim/farmingpy.apsim.APSIMX.html#farmingpy.apsim.APSIMX.__init__">__init__() (APSIMX method)</a>
 
       <ul>
         <li><a href="api/farmingpy.apsim/farmingpy.apsim.APSIMXEnsemble.html#farmingpy.apsim.APSIMXEnsemble.__init__">(APSIMXEnsemble method)</a>
 </li>
+        <li><a href="api/eo.html#farmingpy.eo.BioPhysS2tbx.__init__">(BioPhysS2tbx method)</a>, <a href="api/farmingpy.eo/farmingpy.eo.BioPhysS2tbx.html#farmingpy.eo.BioPhysS2tbx.__init__">[1]</a>
+</li>
+        <li><a href="api/farmingpy.soil/farmingpy.soil.EUPTF2.html#farmingpy.soil.EUPTF2.__init__">(EUPTF2 method)</a>
+</li>
         <li><a href="api/farmingpy.apsim/farmingpy.apsim.PhenologyOptimizer.html#farmingpy.apsim.PhenologyOptimizer.__init__">(PhenologyOptimizer method)</a>
 </li>
+        <li><a href="api/farmingpy.soil/farmingpy.soil.Rosetta.html#farmingpy.soil.Rosetta.__init__">(Rosetta method)</a>
+</li>
         <li><a href="api/farmingpy.apsim/farmingpy.apsim.SoilOptimizer.html#farmingpy.apsim.SoilOptimizer.__init__">(SoilOptimizer method)</a>
+</li>
+        <li><a href="api/farmingpy/farmingpy.TaskReader.html#farmingpy.TaskReader.__init__">(TaskReader method)</a>
 </li>
         <li><a href="api/farmingpy/farmingpy.TimeLogData.html#farmingpy.TimeLogData.__init__">(TimeLogData method)</a>
 </li>
@@ -334,39 +369,19 @@ title="Open an issue"
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX">APSIMX (class in farmingpy.apsim)</a>, <a href="api/farmingpy.apsim/farmingpy.apsim.APSIMX.html#farmingpy.apsim.APSIMX">[1]</a>
+      <li><a href="api/farmingpy.apsim/farmingpy.apsim.APSIMX.html#farmingpy.apsim.APSIMX">APSIMX (class in farmingpy.apsim)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMXEnsemble">APSIMXEnsemble (class in farmingpy.apsim)</a>, <a href="api/farmingpy.apsim/farmingpy.apsim.APSIMXEnsemble.html#farmingpy.apsim.APSIMXEnsemble">[1]</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="C">C</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.clone_simulation">clone_simulation() (APSIMX method)</a>
-</li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.clone_zone">clone_zone() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMXEnsemble.commence">commence() (APSIMXEnsemble method)</a>
+      <li><a href="api/farmingpy.apsim/farmingpy.apsim.APSIMXEnsemble.html#farmingpy.apsim.APSIMXEnsemble">APSIMXEnsemble (class in farmingpy.apsim)</a>
 </li>
   </ul></td>
 </tr></table>
 
-<h2 id="D">D</h2>
+<h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/farmingpy.html#farmingpy.TimeLogData.data">data() (TimeLogData method)</a>
-</li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/farmingpy.html#farmingpy.TimeLogData.devices">devices (TimeLogData attribute)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMXEnsemble.done">done() (APSIMXEnsemble method)</a>
+      <li><a href="api/eo.html#farmingpy.eo.BioPhysS2tbx">BioPhysS2tbx (class in farmingpy.eo)</a>, <a href="api/farmingpy.eo/farmingpy.eo.BioPhysS2tbx.html#farmingpy.eo.BioPhysS2tbx">[1]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -374,93 +389,19 @@ title="Open an issue"
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMXEnsemble.enddate">enddate (APSIMXEnsemble property)</a>
+      <li><a href="api/farmingpy.soil/farmingpy.soil.EUPTF2.html#farmingpy.soil.EUPTF2">EUPTF2 (class in farmingpy.soil)</a>
 </li>
-  </ul></td>
-</tr></table>
-
-<h2 id="F">F</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/farmingpy.html#farmingpy.TimeLogData.farm">farm (TimeLogData attribute)</a>
-</li>
-      <li><a href="api/farmingpy.html#farmingpy.TimeLogData.field">field (TimeLogData attribute)</a>
-</li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.find_physical_soil">find_physical_soil() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.find_simulations">find_simulations() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.find_zones">find_zones() (APSIMX method)</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="G">G</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_agpasture_crops">get_agpasture_crops() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_bd">get_bd() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_crop_ll">get_crop_ll() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_dates">get_dates() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_dul">get_dul() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_initial_nh4">get_initial_nh4() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_initial_no3">get_initial_no3() (APSIMX method)</a>
-</li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_initial_urea">get_initial_urea() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_ll15">get_ll15() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_management">get_management() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_report">get_report() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_sat">get_sat() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_soil">get_soil() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.get_swcon">get_swcon() (APSIMX method)</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="H">H</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/farmingpy.html#farmingpy.TimeLogData.headers">headers (TimeLogData property)</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="O">O</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.PhenologyOptimizer.optimize">optimize() (PhenologyOptimizer method)</a>
-
-      <ul>
-        <li><a href="api/apsim.html#farmingpy.apsim.SoilOptimizer.optimize">(SoilOptimizer method)</a>
-</li>
-      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.PhenologyOptimizer">PhenologyOptimizer (class in farmingpy.apsim)</a>, <a href="api/farmingpy.apsim/farmingpy.apsim.PhenologyOptimizer.html#farmingpy.apsim.PhenologyOptimizer">[1]</a>
+      <li><a href="api/farmingpy.apsim/farmingpy.apsim.PhenologyOptimizer.html#farmingpy.apsim.PhenologyOptimizer">PhenologyOptimizer (class in farmingpy.apsim)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/farmingpy.html#farmingpy.TimeLogData.products">products (TimeLogData attribute)</a>
+      <li><a href="api/eo.html#farmingpy.eo.planet_to_S2_dataset">planet_to_S2_dataset() (in module farmingpy.eo)</a>, <a href="api/farmingpy.eo/farmingpy.eo.planet_to_S2_dataset.html#farmingpy.eo.planet_to_S2_dataset">[1]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -468,65 +409,19 @@ title="Open an issue"
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/farmingpy.html#farmingpy.TimeLogData.rasterize_rates">rasterize_rates() (TimeLogData method)</a>
-</li>
-      <li><a href="api/farmingpy.html#farmingpy.TimeLogData.rates">rates() (TimeLogData method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.remove_simulation">remove_simulation() (APSIMX method)</a>
+      <li><a href="api/eo.html#farmingpy.eo.read_planet">read_planet() (in module farmingpy.eo)</a>, <a href="api/farmingpy.eo/farmingpy.eo.read_planet.html#farmingpy.eo.read_planet">[1]</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.results">results (APSIMX attribute)</a>
+      <li><a href="api/farmingpy.soil/farmingpy.soil.Rosetta.html#farmingpy.soil.Rosetta">Rosetta (class in farmingpy.soil)</a>
 </li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.run">run() (APSIMX method)</a>
-
-      <ul>
-        <li><a href="api/apsim.html#farmingpy.apsim.APSIMXEnsemble.run">(APSIMXEnsemble method)</a>
-</li>
-      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.save">save() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_bd">set_bd() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_crop_ll">set_crop_ll() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_dates">set_dates() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_dul">set_dul() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_initial_nh4">set_initial_nh4() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_initial_no3">set_initial_no3() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_initial_urea">set_initial_urea() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_ll15">set_ll15() (APSIMX method)</a>
-</li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_report">set_report() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_sat">set_sat() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_swcon">set_swcon() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.set_weather">set_weather() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.show_management">show_management() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.show_weather">show_weather() (APSIMX method)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.simulations">simulations (APSIMX property)</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.SoilOptimizer">SoilOptimizer (class in farmingpy.apsim)</a>, <a href="api/farmingpy.apsim/farmingpy.apsim.SoilOptimizer.html#farmingpy.apsim.SoilOptimizer">[1]</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMXEnsemble.step">step() (APSIMXEnsemble method)</a>
+      <li><a href="api/farmingpy.apsim/farmingpy.apsim.SoilOptimizer.html#farmingpy.apsim.SoilOptimizer">SoilOptimizer (class in farmingpy.apsim)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -534,61 +429,81 @@ title="Open an issue"
 <h2 id="T">T</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/farmingpy.html#farmingpy.TimeLogData.taskname">taskname (TimeLogData attribute)</a>
+      <li><a href="api/farmingpy/farmingpy.TaskReader.html#farmingpy.TaskReader">TaskReader (class in farmingpy)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/farmingpy.html#farmingpy.TimeLogData">TimeLogData (class in farmingpy)</a>, <a href="api/farmingpy/farmingpy.TimeLogData.html#farmingpy.TimeLogData">[1]</a>
-</li>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMXEnsemble.today">today (APSIMXEnsemble property)</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="U">U</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.update_cultivar">update_cultivar() (APSIMX method)</a>
-</li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/apsim.html#farmingpy.apsim.APSIMX.update_management">update_management() (APSIMX method)</a>
+      <li><a href="api/farmingpy/farmingpy.TimeLogData.html#farmingpy.TimeLogData">TimeLogData (class in farmingpy)</a>
 </li>
   </ul></td>
 </tr></table>
 
 
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By Luke, Finland<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By Luke, Finland
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
